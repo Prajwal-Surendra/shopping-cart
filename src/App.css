@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10%;
   pointer-events: none;
 }
 
@@ -20,8 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-size: calc(1rem + 2vmin);
 }
 
 .App-link {
@@ -32,7 +32,17 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(0.8rem + 1.5vmin);
+    /* Adjust font size for smaller screens */
+    min-height: 80vh;
+    /* Adjust header height for smaller screens */
   }
 }
